@@ -14,7 +14,7 @@ The objective of this project was to analyze transactional retail data for a glo
 * Product Hierarchy: Product Category, Sub Category, Product
  * Financial Metrics: Order Quantity, Unit Cost, Unit Price, Profit
 
-## Data Cleaning & Preparation
+## Data Cleaning & Feature Engineering
 Before analyzing the data, the following data cleaning steps were performed using Excel / Power Query:
  * Removed Duplicates: Identified and removed duplicate rows to ensure data integrity.
  * Calculated Columns:
