@@ -64,7 +64,5 @@ Based on exploratory analysis of this sales data, several critical trends emerge
 * **Action:** Allocate high-margin, specialized inventory (e.g., expensive carbon-frame road or mountain bikes) heavily to top-performing states like California, while focusing on essential commuter gear in dense urban regions.
 
 ## Interactive Dashboard 
-Please head over to the next file named 'dashboard_screenshot.png.png
+Please head over to the next file named 'dashboard_screenshot.png.png'
 
-
-This is my first project using Excel for data analysis to analyze a bike sales dataset
