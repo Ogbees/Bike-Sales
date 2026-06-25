@@ -5,36 +5,36 @@
 The objective of this project was to analyze transactional retail data for a global bicycle distributor to evaluate sales performance, regional demand, and product profitability. By leveraging key financial columns (Unit Cost, Unit Price, Profit) alongside demographic and geographic data, this analysis provides actionable business insights to optimize inventory management, refine pricing strategies, and target high-value customer segments.
 
 ## Data Source & Structure
-* **Dataset: Global Bike Sales Dataset (Kaggle)
- * **Granularity: 1,000+ individual sales transactions
- * **Core Attributes Analyzed:
- * **Temporal: Date, Month, Year
- * **Demographic: Gender, Age Group
- * **Geographic: Country, State
-* **Product Hierarchy: Product Category, Sub Category, Product
- * **Financial Metrics: Order Quantity, Unit Cost, Unit Price, Profit
+* Dataset: Global Bike Sales Dataset (Kaggle)
+ * Granularity: 1,000+ individual sales transactions
+ * Core Attributes Analyzed:
+ * Temporal: Date, Month, Year
+ * Demographic: Gender, Age Group
+ * Geographic: Country, State
+* Product Hierarchy: Product Category, Sub Category, Product
+ * Financial Metrics: Order Quantity, Unit Cost, Unit Price, Profit
 
 ## Data Cleaning & Preparation
 Before analyzing the data, the following data cleaning steps were performed using Excel / Power Query:
- * **Removed Duplicates: Identified and removed duplicate rows to ensure data integrity.
- * **Calculated Columns:
- * **Total Revenue: Created a calculated measure using Order Quantity * Unit Price.
-* **Total Cost: Created a calculated measure using Order Quantity * Unit Cost.
+ * Removed Duplicates: Identified and removed duplicate rows to ensure data integrity.
+ * Calculated Columns:
+ * Total Revenue: Created a calculated measure using Order Quantity * Unit Price.
+* Total Cost: Created a calculated measure using Order Quantity * Unit Cost.
 Profit Margin (%): Established a formula to calculate relative profitability: $\text{Profit Margin} = \frac{\text{Profit}}{\text{Total Revenue}} \times 100$.
-* **Data Integrity Checks: Verified that the pre-calculated Profit column perfectly matched the calculated values ($\text{Revenue} - \text{Cost}$) across all rows.
- * **Data Formatting: Standardized financial metrics into local currencies and formatted temporal fields for smooth time-series sorting.
- * **Created Age Brackets: Used a nested IF formula to group customers into distinct life stages for better demographic targeting:
- * **Youth: Under 25
- * **Young Adut: 25 to 34
- * **Adult: 35 to 64
- * **Senior: 65 and above
+* Data Integrity Checks: Verified that the pre-calculated Profit column perfectly matched the calculated values ($\text{Revenue} - \text{Cost}$) across all rows.
+ * Data Formatting: Standardized financial metrics into local currencies and formatted temporal fields for smooth time-series sorting.
+ * Created Age Brackets: Used a nested IF formula to group customers into distinct life stages for better demographic targeting:
+ * Youth: Under 25
+ * Young Adut: 25 to 34
+ * Adult: 35 to 64
+ * Senior: 65 and above
 
 # Key Features & Tools Used
- * **Data Transformation: Conditional formatting, nested logic formulas (IF), and text cleaning functions.
+ * Data Transformation: Conditional formatting, nested logic formulas (IF), and text cleaning functions.
 
-* **Pivot Tables: Built to aggregate financial and demographic metrics dynamically across multiple dimensions (e.g., tracking total profit by state and year).
+* Pivot Tables: Built to aggregate financial and demographic metrics dynamically across multiple dimensions (e.g., tracking total profit by state and year).
 
-* **Interactive Dashboard: Combined dynamic charts with interactive Slicers for Region, Education, and Marital Status, allowing stakeholders to filter data on the fly.
+* Interactive Dashboard: Combined dynamic charts with interactive Slicers for Region, Education, and Marital Status, allowing stakeholders to filter data on the fly.
 
 ## Key Insights 
 Based on exploratory analysis of this sales data, several critical trends emerge:
